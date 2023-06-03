@@ -1,0 +1,25 @@
+<div class='container'>
+    <div class='card-group justify-content-center'>
+      <div class="row row-cols-1 row-cols-md m-lg-4 g-4 mt-4">
+        <div class="col-md-12 d-flex text-center ">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+             <div class="col-md-4">
+              <img src="<%= book.Cover %>" class="img-fluid rounded-start"alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><%= book.title %></h5>
+                <p class="card-text">Data de lançamento: <%= book.releaseDate %></p>
+                <p class="card-text">Editora: <%= book.publishingCompany %></p>
+                <p class="card-text">ISBN10: <%= book.ISBNTen %></p>
+                <p class="card-text">Autor: <%= book.author %> </p>
+               <%=button_to "Mostrar Livro", book %>
+              </div>
+            </div>
+          </div>
+        </div>      
+      </div>
+    </div>
+  </div>
+</div>

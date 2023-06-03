@@ -1,0 +1,24 @@
+<p style="color: green"><%= notice %></p>
+
+
+</div>
+<div class='row justify-content-end'>
+  <div class='col-md-2 m-0 text-center'>
+    <%= button_to "Editar essa edição", edit_edition_path(@edition) %> 
+  </div>
+    <div class='col-md-2  text-center'>
+      <%= button_to "Voltar para edição", editions_path %>
+    </div>
+</div>
+
+<div>
+  <%= render @edition %>
+</div>
+
+  <div class='container'>
+  <div class='row m-5'>
+    <div class='col-md-12 text-center'>
+    <%= button_to "Excluir", @edition, method: :delete %>
+    </div>
+      </div>
+      </div>

@@ -1,0 +1,29 @@
+<div class='container'>
+  <div class='row'>
+    <div class='col-md-12'>
+      <h1 class='text-center'>Editar livro</h1>
+    </div>
+  </div>
+</div>
+
+  
+
+
+
+<div class='container justify-content-center'>
+  <div class='row d-flex '>
+    <div class='col-md-12 '>
+      <%= render "form", book: @book %>
+    </div>
+  </div>
+</div>
+
+
+<div class='row justify-content-center'>
+  <div class='col-md-2 d-flex m-0 text-center'>
+  <%= button_to "Mostrar Livro", @book %>
+  </div>
+    <div class='col-md-2 d-flex text-center'>
+      <%= button_to "Voltar para Livros", books_path %>
+    </div>
+ 

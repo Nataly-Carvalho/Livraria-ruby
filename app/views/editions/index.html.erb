@@ -1,0 +1,21 @@
+<p style="color: green"><%= notice %></p>
+<div class='container'>
+  <div class='row'>
+    <div class='col-md-12'>
+      <h1 class='text-center'>Edição</h1>
+    </div>
+  </div>
+</div>
+
+
+<div id="editions">
+  <% @editions.each do |edition| %>
+    <%= render edition %>
+      
+    <p>
+      <%= button_to "Mostrar edição", edition %>
+    </p>
+  <% end %>
+</div>
+
+<%= button_to "Nova edição", new_edition_path %>
