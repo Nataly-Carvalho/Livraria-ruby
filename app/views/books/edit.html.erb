@@ -21,9 +21,10 @@
 
 <div class='row justify-content-center'>
   <div class='col-md-2 d-flex m-0 text-center'>
-  <%= button_to "Mostrar Livro", @book %>
+  <%= button_to "Mostrar Livro", @book, :method => :get %>
   </div>
     <div class='col-md-2 d-flex text-center'>
-      <%= button_to "Voltar para Livros", books_path %>
+      <%= button_to "Voltar para Livros", books_path, :method => :get %>
+      
     </div>
  

@@ -14,7 +14,8 @@
                 <p class="card-text">Editora: <%= book.publishingCompany %></p>
                 <p class="card-text">ISBN10: <%= book.ISBNTen %></p>
                 <p class="card-text">Autor: <%= book.author %> </p>
-               <%=button_to "Mostrar Livro", book %>
+                <%=button_to "Mostrar Livro", book, :method => :get %>
+                
               </div>
             </div>
           </div>
