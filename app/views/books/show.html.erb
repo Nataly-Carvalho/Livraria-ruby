@@ -6,10 +6,10 @@
 </div>
 <div class='row justify-content-end'>
   <div class='col-md-2 m-0 text-center'>
-  <%= button_to "Editar esse livro", edit_book_path(@book) %> 
+  <%= button_to "Editar esse livro", edit_book_path(@book), :method => :get %> 
   </div>
     <div class='col-md-2  text-center'>
-      <%= button_to "Voltar para livros", books_path %>
+      <%= button_to "Voltar para livros", books_path, :method => :get  %>
     </div>
 </div>
 

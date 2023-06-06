@@ -4,10 +4,10 @@
 </div>
 <div class='row justify-content-end'>
   <div class='col-md-2 m-0 text-center'>
-    <%= button_to "Editar essa edição", edit_edition_path(@edition) %> 
+    <%= button_to "Editar essa edição", edit_edition_path(@edition), :method => :get %> 
   </div>
     <div class='col-md-2  text-center'>
-      <%= button_to "Voltar para edição", editions_path %>
+      <%= button_to "Voltar para edição", editions_path, :method => :get %>
     </div>
 </div>
 
