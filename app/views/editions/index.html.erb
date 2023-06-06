@@ -13,9 +13,9 @@
     <%= render edition %>
       
     <p>
-      <%= button_to "Mostrar edição", edition %>
+      <%= button_to "Mostrar edição", edition, :method => :get %>
     </p>
   <% end %>
 </div>
 
-<%= button_to "Nova edição", new_edition_path %>
+<%= button_to "Nova edição", new_edition_path, :method => :get %>
